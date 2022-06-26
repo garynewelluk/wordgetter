@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Word Getter</title>        
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="text/JavaScript" src="wordgetter.js"></script>
+        <script type="text/JavaScript">
+            async function SetValue()
+            {
+                let word = await GetWord();                      
+                document.getElementById('word').innerHTML = word;
+                let definition = await GetDefinition(word);
+                document.getElementById('definition').innerHTML = definition;
+            }
+        </script>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>    
+    <body>
+        <h1>Word Getter</h1>
+        <div class="inputs">            
+            <input type="button" value="Get Word" onClick="SetValue()"/>
+        </div>
+        <div id="word" class="word">
+
+        </div>
+        
+        <div id="definition" class="definition">
+
+        </div>
+    </body>
+</html>
+

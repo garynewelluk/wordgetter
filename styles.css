@@ -1,0 +1,19 @@
+div
+{
+    margin-top: 10px;
+}
+
+div.inputs
+{
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    margin: 5px 0px 5px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+div.word
+{
+    font-size: larger;
+    font-weight: bold;
+    text-transform: capitalize;
+}
